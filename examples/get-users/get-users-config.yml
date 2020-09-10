@@ -1,0 +1,21 @@
+query: select * from users where active = $1 and name = $2
+service_name: get-users
+db:
+  name: users
+  host: 144.99.777.111
+  user: postgres
+  password: 1234567
+  port: "5432"
+  type: postgres
+  requestTimeout: "30"
+service_type: read
+parameters:
+  type: path
+  schema:
+  - active:
+      required: true
+      defaultValue: ""
+  - name:
+      required: true
+      defaultValue: ""
+platform: knative
