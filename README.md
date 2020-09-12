@@ -12,6 +12,14 @@ Octo will create an endpoint that will expose your data as service, all you need
 
 ![overview](https://user-images.githubusercontent.com/20528562/92733888-b9652b00-f380-11ea-9643-9845953050dd.png)
 
+# Supported Databases
+- PostgresSQL
+- MSSQL
+
+# Supported Serverless Frameworks
+- OpenFaaS
+- Knative
+
 # Installation
 [Download Latest Binary](https://github.com/octoproject/octo-cli/releases/latest)
 
@@ -23,7 +31,7 @@ go get github.com/octoproject/octo-cli
 
 # Examples
 Examples can be found in the [examples/](https://github.com/octoproject/octo-cli/tree/master/examples) directory. They are step-by-step examples that will help you to deploy your first service using 
- `octo-cli` .
+ `octo-cli` 
 
 # Usage
 
