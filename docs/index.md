@@ -5,4 +5,5 @@
 layout: home_page
 title: Home
 permalink: /
+nav_order: 1
 ---
