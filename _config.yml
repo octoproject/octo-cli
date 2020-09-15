@@ -18,29 +18,31 @@ email:
 description: "" # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+
 # logo: "assets/images/logo.png"
 
 # Build settings
 markdown: kramdown
-theme: just-the-docs
+# theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Enable or disable the site search
 # Supports true (default) or false
 search_enabled: true
 
+color_scheme: custom-scheme
+
 # Enable support for hyphenated search words:
 search_tokenizer_separator: /[\s/]+/
 
-baseurl: /octo
+# baseurl: /
 
 
 heading_anchors: true
 
-# color_scheme: "dark"
 
 # Aux links for the upper right navigation
 aux_links:
@@ -48,4 +50,4 @@ aux_links:
     - "#"
 
 # Set a path/url to a logo that will be displayed instead of the title
-logo: "assets/cover1.png"
+logo: "assets/cover.png"
