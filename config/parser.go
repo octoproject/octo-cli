@@ -19,7 +19,7 @@ var (
 	ErrBadURL          = errors.New("bad url")
 	ErrBadDefaultValue = errors.New("please provide default value for parameter")
 	ErrBadParamsType   = errors.New("bad params type, the correct values are path and body")
-	ErrBadDBType       = errors.New("bad db type, the correct values are mssql and postgres")
+	ErrBadDBType       = errors.New("bad db type, the correct values are mssql ,mysql and postgres")
 	ErrBadServiceType  = errors.New("bad service type, the correct values are read and write")
 	ErrBadAuthUsername = errors.New("empty username in credentials")
 	ErrBadAuthPassword = errors.New("password must be at least 10 characters")
@@ -94,7 +94,7 @@ func (s *Service) validate() error {
 		return ErrBadDBUser
 	case len(s.DB.Port) == 0:
 		return ErrBadDBPort
-	case s.DB.Type != "postgres" && s.DB.Type != "mssql":
+	case s.DB.Type != "postgres" && s.DB.Type != "mssql" && s.DB.Type != "mysql":
 		return ErrBadDBType
 	case s.ServiceType != "read" && s.ServiceType != "write":
 		return ErrBadServiceType

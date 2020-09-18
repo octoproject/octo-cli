@@ -14,6 +14,7 @@ import (
 const (
 	postgresBindVars = "$"
 	mssqlBindVars    = "?"
+	mysqlBindVars    = "$"
 )
 
 func NewInitCommand() *cobra.Command {
@@ -118,7 +119,7 @@ func promptParams(numParam int) (*config.Params, error) {
 }
 
 func promptDBQuestions() (*config.DB, error) {
-	dbDialect, err := prompt.PromptSelect("Select the database dialect:", []string{"postgres", "mssql"})
+	dbDialect, err := prompt.PromptSelect("Select the database dialect:", []string{"postgres", "mssql", "mysql"})
 	if err != nil {
 		return nil, err
 	}
@@ -175,6 +176,8 @@ func getBindVars(dbDialect string) string {
 		return postgresBindVars
 	case dbDialect == "mssql":
 		return mssqlBindVars
+	case dbDialect == "mysql":
+		return mysqlBindVars
 	}
 	return ""
 }
