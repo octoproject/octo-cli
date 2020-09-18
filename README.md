@@ -15,6 +15,7 @@ Octo will create an endpoint that will expose your data as service, all you need
 # Supported Databases
 - PostgresSQL
 - MSSQL
+- MySQL
 
 # Supported Serverless Frameworks
 - OpenFaaS
@@ -28,6 +29,9 @@ Alternatively you can install using go:
 ```bash
 go get github.com/octoproject/octo-cli
 ```
+
+# Documentation
+Documentation can be found on [here](https://octoproject.github.io/octo-cli/quick-start/).
 
 # Examples
 Examples can be found in the [examples/](https://github.com/octoproject/octo-cli/tree/master/examples) directory. They are step-by-step examples that will help you to deploy your first service using 
