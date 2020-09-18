@@ -51,6 +51,7 @@ func DeployFunction(f *Function) error {
 		if err != nil {
 			return err
 		}
+		return nil
 	}
 
 	err = f.prepareAndUpdateService(client, service)
