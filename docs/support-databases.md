@@ -9,6 +9,6 @@ nav_order: 5
 Below a list of current supported databases, to request new database support open new [issue](https://github.com/octoproject/octo-cli/issues)
 - PostgresSQL.
 - MSSQL / SQL Server.
-- MySQL (Coming soon).
+- MySQL.
 
 
