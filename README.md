@@ -13,7 +13,7 @@ Octo will create an endpoint that will expose your data as service, all you need
 ![overview](https://user-images.githubusercontent.com/20528562/92733888-b9652b00-f380-11ea-9643-9845953050dd.png)
 
 # Supported Databases
-- PostgresSQL
+- PostgreSQL
 - MSSQL
 - MySQL
 
